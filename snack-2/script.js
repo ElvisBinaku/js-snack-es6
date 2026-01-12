@@ -61,10 +61,10 @@ randomFalli()
 
 for (let index = 0; index < squadre.length; index++) { 
     let singPlur = "";
-    if (squadre[index].falliSubiti > 1){
-        singPlur = "falli"
-    } else {
+    if (squadre[index].falliSubiti === 1){
         singPlur = "fallo"
+    } else {
+        singPlur = "falli"
     }
     console.log(`${squadre[index].nome} ha subito ${squadre[index].falliSubiti} ${singPlur}`)
 }
