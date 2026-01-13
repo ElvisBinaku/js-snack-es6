@@ -10,27 +10,27 @@ const squadre = [
         falliSubiti: 0,
     },
     {
-        nome: "inter",
+        nome: "padova",
         puntiFatti: 0,
         falliSubiti: 0,
     },
     {
-        nome: "juve",
+        nome: "conegliano",
         puntiFatti: 0,
         falliSubiti: 0,
     },
     {
-        nome: "napoli",
+        nome: "montebelluna",
         puntiFatti: 0,
         falliSubiti: 0,
     },
     {
-        nome: "roma",
+        nome: "oderzo",
         puntiFatti: 0,
         falliSubiti: 0,
     },
     {
-        nome: "udinese",
+        nome: "jesolo",
         puntiFatti: 0,
         falliSubiti: 0,
     },
