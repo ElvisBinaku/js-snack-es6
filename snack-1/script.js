@@ -29,7 +29,7 @@ const biciDaCorsa = [
         peso: 8.5,
     },
     {
-        nome: "canyon",
+        nome: "ion",
         peso: 6.8,
     },
     {
@@ -38,20 +38,23 @@ const biciDaCorsa = [
     }   
 ];
 
-
-        let biciLeggera = biciDaCorsa[0].peso;
-        
-        for (let index = 1; index < biciDaCorsa.length; index++) {
-           
-        let biciCorrente = biciDaCorsa[index].peso
-        if (biciCorrente <= biciLeggera) {
-                biciLeggera = biciCorrente
-            } 
-        
-        //console.log(biciLeggera)
-    
+function getLightestBike(bikeList){
+    if (bikeList <= 0){
+        return {};
     }
-    console.log(`quindi la bici più leggera è quella che pesa ${biciLeggera}Kg`)
+    
+    let biciLeggera = biciDaCorsa[0];
+    
+    for (let index = 1; index < biciDaCorsa.length; index++) {
+        if (biciDaCorsa[index].peso <= biciLeggera.peso) {
+            biciLeggera = biciDaCorsa[index]
+        } 
+        
+    }
+    return biciLeggera;
+}
+
+    console.log(getLightestBike(biciDaCorsa))
 
     
     
