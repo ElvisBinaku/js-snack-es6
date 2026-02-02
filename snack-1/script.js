@@ -54,7 +54,9 @@ function getLightestBike(bikeList){
     return biciLeggera;
 }
 
-    console.log(getLightestBike(biciDaCorsa))
+const result = getLightestBike(biciDaCorsa)
+
+document.getElementById("lightest-bike").textContent = `${result.nome} e pesa ${result.peso} Kg`;
 
     
     
