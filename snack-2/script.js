@@ -71,5 +71,18 @@ const squadre = [
         
         
         //Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-        const newArray = squadre.map(({ nome, falliSubiti }) => ({ [nome]: falliSubiti }));
-        console.log(newArray)
+
+        const teamWithoutPoints = [];
+        for (let index = 0; index < squadre.length; index++) {
+            const currentTeam = {
+            nome : squadre[index].nome,
+            falliSubiti : squadre[index].falliSubiti,
+            };
+            teamWithoutPoints.push(currentTeam)
+        }
+
+ console.log(teamWithoutPoints)
+
+
+         //const newArray = squadre.map(({ nome, falliSubiti }) => ({ [nome]: falliSubiti }));
+        //console.log(newArray)
